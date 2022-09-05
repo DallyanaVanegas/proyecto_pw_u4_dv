@@ -1,20 +1,20 @@
 import axios from 'axios';
 
 //Metodos fachada a exportar
-const obtenerEmpleado = async (id) => {
+export const obtenerEmpleado = async (id) => {
     //return await obtenerEmpleadoAPI(id);
     return await obtenerEmpleadoAxios(id);
 }
 
-const insertarEmpleado = async (body) => {
+export const insertarEmpleado = async (body) => {
     return await insertarEmpleadoAxios(body);
 }
 
-const actualizarEmpleado = async (body) => {
+export const actualizarEmpleado = async (body) => {
     return await actualizarEmpleadoAxios(body);
 }
 
-const borrarEmpleado = async (id) => {
+export const borrarEmpleado = async (id) => {
     return await borrarEmpleadoAxios(id);
 }
 
@@ -60,3 +60,4 @@ const borrarEmpleadoAxios = async (id) => {
 //export default obtenerEmpleado
 //export default borrarEmpleado
 export default obtenerEmpleado ;insertarEmpleado ;actualizarEmpleado; borrarEmpleado
+//export default actualizarEmpleado
